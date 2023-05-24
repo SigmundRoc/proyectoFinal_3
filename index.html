@@ -1,15 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>inicio|PetHaven</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
 </head>
-<body>
-    
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<body>
+
+    <!--navbar---------------------------------------->
+
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">PetHaven</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">PetHaven</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <ul class="list-group list-group-flush">
+                    <li style="background-color: #212529;" class="list-group-item"><a style="color: #fff
+                    ;" href="./index.html">Inicio</a></li>
+                    <li style="background-color: #212529;" class="list-group-item"><a style="color: #fff
+                    ;" href="#">Conocenos</a></li>
+                    <li style="background-color: #212529;" class="list-group-item"><a style="color: #fff
+                    ;" href="#">Perros</a></li>
+                    <li style="background-color: #212529;" class="list-group-item"><a style="color: #fff
+                    ;" href="#">Gatos</a></li>
+                    <li style="background-color: #212529;" class="list-group-item"><a style="color: #fff
+                    ;" href="#">Productos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--carrusel---------------------------------------------------->
+
+    <header class="container-max">
+
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/index/carrusel/img1.jpeg" class="d-block w-100" alt="dos perros y dos gatos juntos">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/index/carrusel/img2.jpeg" class="d-block w-100"
+                        alt="perro corriendo sobre el pasto">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/index/carrusel/img3.jpeg" class="d-block w-100" alt="mujer abrazando a su gato">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </header>
+
+    <!--fin carrusel-------------------------------------------------->
+    <!-- inicio productos--------------------------------------------->
+
+    <section class="section__elements container-max">
+        <div class="elements">
+            <div class="icons-1">
+                <div class="icon-img">
+                    <img src="./img/index/Compra.png" alt="Carro de compras">
+                </div>
+                <p>Compra segura en linea de todos los productos</p>
+            </div>
+            <div class="icons-2">
+                <div class="icon-img">
+                    <img src="./img/index/Desc.png" alt="imagen de Descuentos">
+                </div>
+                <p>Descuentos en tus productos favoritos</p>
+            </div>
+            <div class="icons-3">
+                <div class="icon-img">
+                    <img src="./img/index/Envio.png" alt="camion de Envio">
+                </div>
+                <p>Envío gratis compras mayores a $20</p>
+            </div>
+            <div class="icons-4">
+                <div class="icon-img">
+                    <img src="./img/index/Layer-60.png" alt="tarjetas">
+                </div>
+                <p>Aceptamos todas las tarjetas</p>
+            </div>
+        </div>
+        <div class="callToAction">
+            <button href="#">ver productos</button>
+        </div>
+    </section>
+
+    <!--fin del carrusel--------------------------------------------->
+    <!--comienzo del main-------------------------------------------->
+
+    <main class="container-max">
+
+        <article class="main__article">
+            <div class="main__div-h1">
+                <h1>Somos una tienda de mascotas completa</h1>
+            </div>
+            <div class="main__div-p">
+                <p>En PetHaven ofrecemos una gran variedad de productos y alimentos para mascotas</p>
+            </div>
+
+            <section class="main__section-pets">
+
+                <div class="pet-1">
+                    <img src="./img/index/main/perro.webp" alt="imagen de un perro dorado">
+                </div>
+
+                <div class="pet-2">
+                    <img src="./img/index/main/gato.webp" alt="imagen de un gato gris">
+                </div>
+
+                <div class="pet-3">
+                    <img src="./img/index/main/ave.webp" alt="imagen de un pajaro de multiples colores">
+                </div>
+
+            </section>
+
+            <!--section responsive--------------------------->
+            <section class="main__section-pets-responsive">
+
+                <div class="pets-dog">
+                    <img src="./img/index/main/perro.webp" alt="imagen de un perro dorado">
+                </div>
+
+                <div class="other-pets">
+
+                    <div class="pet-cat">
+                        <img src="./img/index/main/gato.webp" alt="imagen de un gato gris">
+                    </div>
+
+                    <div class="pet-birds">
+                        <img src="./img/index/main/ave.webp" alt="imagen de un pajaro de ,ultiples colores">
+                    </div>
+
+                </div>
+            </section>
+
+        </article>
+
+    </main>
+
+    <!--fin del main------------------------------------------>
+    <!--comienzo del container de la comida de mascota-------->
+
+    <article class="alimento container-max">
+        <h3>Alimento para perro</h3>
+        <p class="alimento__p">Elije la mejor marca para tu perro</p>
+
+        <div class="container__food">
+            <div class="card__food">
+                <div class="food__img">
+                    <a href="#" class="food__a">
+                        <img src="./img/index/main/alimentoperro1.webp" alt="alimento para perro">
+                    </a>
+                </div>
+                    <div class="food__description">
+                        <a href="#">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita hic quia fugit quisquam autem culpa doloribus cum deserunt quibusdam praesentium!</p>
+                    </a>
+                </div>
+                <div class="food__price">
+                    <h5>$26</h5>
+                </div>
+            </div>
+
+            <div class="card__food">
+                <div class="food__img">
+                    <a href="#" class="food__a">
+                        <img src="./img/index/main/alimentoperro2.webp" alt="alimento para perro">
+                    </a>
+                </div>
+                    <div class="food__description">
+                        <a href="#">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita hic quia fugit quisquam autem culpa doloribus cum deserunt quibusdam praesentium!</p>
+                    </a>
+                </div>
+                <div class="food__price">
+                    <h5>$21</h5>
+                </div>
+            </div>
+
+            <div class="card__food">
+                <div class="food__img">
+                    <a href="#" class="food__a">
+                        <img src="./img/index/main/alimentoperro3.webp" alt="alimento para perro">
+                    </a>
+                </div>
+                    <div class="food__description">
+                        <a href="#">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita hic quia fugit quisquam autem culpa doloribus cum deserunt quibusdam praesentium!</p>
+                    </a>
+                </div>
+                <div class="food__price">
+                    <h5>$32</h5>
+                </div>
+            </div>
+
+        </div>
+    </article>
+
+    <article class="alimento container-max">
+        <h3>Alimento para gato</h3>
+        <p class="alimento__p">Elije la mejor marca para tu gato</p>
+
+        <div class="container__food">
+
+            <div class="card__food">
+                <div class="food__img">
+                    <a href="#" class="food__a">
+                        <img src="./img/index/main/alimentogato1.webp" alt="alimento para perro">
+                    </a>
+                </div>
+                    <div class="food__description">
+                        <a href="#">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita hic quia fugit quisquam autem culpa doloribus cum deserunt quibusdam praesentium!</p>
+                    </a>
+                </div>
+                <div class="food__price">
+                    <h5>$26</h5>
+                </div>
+            </div>
+
+            <div class="card__food">
+                <div class="food__img">
+                    <a href="#" class="food__a">
+                        <img src="./img/index/main/alimentogato2.webp" alt="alimento para perro">
+                    </a>
+                </div>
+                    <div class="food__description">
+                        <a href="#">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita hic quia fugit quisquam autem culpa doloribus cum deserunt quibusdam praesentium!</p>
+                    </a>
+                </div>
+                <div class="food__price">
+                    <h5>$21</h5>
+                </div>
+            </div>
+
+            <div class="card__food">
+                <div class="food__img">
+                    <a href="#" class="food__a">
+                        <img src="./img/index/main/alimentogato3.webp" alt="alimento para perro">
+                    </a>
+                </div>
+                    <div class="food__description">
+                        <a href="#">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita hic quia fugit quisquam autem culpa doloribus cum deserunt quibusdam praesentium!</p>
+                    </a>
+                </div>
+                <div class="food__price">
+                    <h5>$32</h5>
+                </div>
+
+            </div>
+    </article>
+
+    <footer class="container-max">
+        <section class="footer__container-grid container-max">
+            <div class="footer__title">
+                <h2>Conoce más de PetHaven</h2>
+            </div>
+            
+            <div class="footer__text">
+                <p>
+                    Somos un equipo conformado por un telento humano que se ha encargado de ganarse la confianza de cada uno
+                    de los propietarios y amantes de las mascotas, en cada una de nuestras tiendas en Ecuador, ofreciendo un
+                    ambiente único, muy agradable, con productos de calidad, servicios y una atención excelente.
+                    <div class="callToAction">
+                        <button href="#">ver productos</button>
+                    </div>
+                </p>
+            </div>
+                
+            <div class="footer__img">
+                <img src="./img/index/footer/pngwing.webp" alt="mujer abrazando un perro">
+            </div>
+        </section>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
