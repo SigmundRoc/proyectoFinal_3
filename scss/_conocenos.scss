@@ -1,0 +1,21 @@
+.container-conocenos{
+    margin-top: 56px;
+    padding: 20px 0 0 0;
+    main{
+    max-width: 1000px;
+    margin: auto;
+    }
+    h1{
+        margin: 15px;
+        font-size: 50px;
+    }
+    .subContainer-conocenos{
+        margin: 15px;
+        .h3__container{
+            margin: 15px;
+            .p__container{
+                margin: 15px;
+            }
+        }
+    }
+}
