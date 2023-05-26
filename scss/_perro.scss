@@ -1,0 +1,21 @@
+.food__animals{
+    padding: 100px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .alimento__p{
+        width: 70%;
+        font-size: 50px;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .food__animals{
+        .alimento__p{
+            width: 100%;
+            font-size: 35px;
+            font-weight: 700;
+        }
+    }
+}

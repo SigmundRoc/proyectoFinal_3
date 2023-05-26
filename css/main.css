@@ -8,12 +8,16 @@
   font-family: "Roboto", sans-serif;
 }
 
+li {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
 }
 
 body {
-  background-color: #f8dede;
+  background-color: #fdf7f7;
 }
 
 .container-max {
@@ -284,6 +288,8 @@ header .carousel .carousel-inner img {
           justify-content: center;
   width: 90%;
   margin: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .alimento .container__food .card__food {
   display: -webkit-box;
@@ -315,6 +321,9 @@ header .carousel .carousel-inner img {
   width: 200px;
   aspect-ratio: 1/1;
   border: 2px solid #b0b0b0;
+}
+.alimento .container__food .card__food .food__img a img {
+  width: 100%;
 }
 .alimento .container__food .card__food .food__description {
   width: 200px;
@@ -613,4 +622,78 @@ header .carousel .carousel-inner img {
 }
 .container-conocenos .subContainer-conocenos .h3__container .p__container {
   margin: 15px;
+}
+
+.food__animals {
+  padding: 100px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.food__animals .alimento__p {
+  width: 70%;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 500px) {
+  .food__animals .alimento__p {
+    width: 100%;
+    font-size: 35px;
+    font-weight: 700;
+  }
+}
+.article__productos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.article__productos .section-options {
+  padding: 75px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.article__productos .section-options section {
+  margin: 20px;
+}
+.article__productos .section-options section ul {
+  padding: 0 0 0 5px;
+}
+.article__productos .section-options section ul li {
+  margin: 7px 0;
+}
+
+.show {
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .article__productos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  ul {
+    display: none;
+    padding: 0;
+  }
 }

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Productos|PetHaven - Tienda para mascotas </title>
+
+    <link rel="icon" type="imagex-icon" href="img/icon.webp">
+
+    <meta name="description" content="Explora la amplia variedad de productos para mascotas en PetHaven. Encuentra todo lo que necesitas para el cuidado y el disfrute de tus mascotas, incluyendo alimentos, accesorios, juguetes y productos para la salud y el bienestar. Descubre la calidad y la diversidad que ofrecemos para el cuidado de tus queridos animales." />
+
+    <meta name="autor" content="Dyllan">
+
+    <meta name="copyright" content="Dyllan (Propietario del copyright)">
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--navbar---------------------------------------->
+
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">PetHaven</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">PetHaven</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <ul class="list-group list-group-flush">
+                    <li style="background-color: #212529;" class="list-group-item"><a style="color: #fff
+                    ;" href="./index.html">Inicio</a></li>
+                    <li style="background-color: #212529;" class="list-group-item"><a style="color: #fff
+                    ;" href="./conocenos.html">Conocenos</a></li>
+                    <li style="background-color: #212529;" class="list-group-item"><a style="color: #fff
+                    ;" href="./perro.html">Perros</a></li>
+                    <li style="background-color: #212529;" class="list-group-item"><a style="color: #fff
+                    ;" href="./gato.html">Gatos</a></li>
+                    <li style="background-color: #212529;" class="list-group-item"><a style="color: #fff
+                    ;" href="./productos.html">Productos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- fin navbar------------------------------------------- -->
+
+    <article class="article__productos container-max">
+
+        <aside class="section-options">
+            <section>
+                <div class="section-title">
+                    <h4 onclick="toggleList('tipo-producto')">Tipo de producto</h4>
+                </div>
+                <ul id="tipo-producto">
+
+                    <li><input type="checkbox" name="Conejos" id="checkbox__conejo"><label for="checkbox__conejo">Conjejos</label></li>
+
+                    <li><input type="checkbox" name="Gatos" id="checkbox__gato"><label for="checkbox__gato">Gatos</label></li>
+
+                    <li><input type="checkbox" name="Hamster" id="checkbox__hamster"><label for="checkbox__hamster">Hamsters</label></li>
+
+                    <li><input type="checkbox" name="Pajaros" id="checkbox__pajaro"><label for="checkbox__pajaro">Pájaros</label></li>
+
+                    <li><input type="checkbox" name="Perros" id="checkbox__perro"><label for="checkbox__perro">Perros</label></li>
+
+                    <li><input type="checkbox" name="Peces" id="checkbox__pez"><label for="checkbox__pez">Peces</label></li>
+                </ul>
+            </section>
+
+            <section>
+                
+                <div class="section-title">
+                    <h4 onclick="toggleList('perros')">Perros</h4>
+                </div>
+                <ul id="perros">
+
+                    <li><input type="checkbox" name="Alimentos" id="checkbox__alimentos"><label for="checkbox__alimentos">Alimentos</label></input></li>
+
+                    <li><input type="checkbox" name="CamasYMantas" id="chechbox__camasymantas"><label for="chechbox__camasymantas">Camas y Mantas</label></input></li>
+
+                    <li><input type="checkbox" name="CasasYJaulas" id="chechbox__casasyjaulas"><label for="chechbox__casasyjaulas">Casas y Jaulas</label></input></li>
+
+                    <li><input type="checkbox" name="Cepillos" id="checkbox__cepillos"><label for="checkbox__cepillos">Cepillos</label></input></li>
+
+                    <li><input type="checkbox" name="Collares" id="checkbox__collares"><label for="checkbox__collares">Collares</label></input></li>
+
+                    <li><input type="checkbox" name="ComedoresYBebederos" id="checkbox__comedoresybebederos"><label for="checkbox__comedoresybebederos">Comedores y Bebederos</label></input></li>
+
+                    <li><input type="checkbox" name="Higiene" id="checkbox__higiene"><label for="checkbox__higiene">Higiene</label></input></li>
+
+                    <li><input type="checkbox" name="Juguetes" id="checkbox__juguetes"><label for="checkbox__juguetes">Juguetes</label></input></li>
+
+                    <li><input type="checkbox" name="Ropa" id="checkbox__ropa"><label for="checkbox__ropa">Ropa</label></input></li>
+
+                    <li><input type="checkbox" name="SaludYBienestar" id="checkbox__saludybienestar"><label for="checkbox__saludybienestar">Salud y Bienestar</label></input></li>
+
+            </section>
+
+            <section>
+                <div class="section-title">
+                    <h4 onclick="toggleList('gatos')">Gatos</h4>
+                </div>
+                <ul id="gatos">
+
+                    <li><input type="checkbox" name="Alimentos" id="checkbox__alimentos-gato"><label for="checkbox__alimentos-gato">Alimentos</label></input></li>
+
+                    <li><input type="checkbox" name="CamasYMantas" id="chechbox__camasymantas-gato"><label for="chechbox__camasymantas-gato">Camas y Mantas</label></input></li>
+
+                    <li><input type="checkbox" name="CasasYJaulas" id="chechbox__casasyjaulas-gato"><label for="chechbox__casasyjaulas-gato">Casas y Jaulas</label></input></li>
+
+                    <li><input type="checkbox" name="Cepillos" id="checkbox__cepillos-gato"><label for="checkbox__cepillos-gato">Cepillos</label></input></li>
+
+                    <li><input type="checkbox" name="Collares" id="checkbox__collares-gato"><label for="checkbox__collares-gato">Collares</label></input></li>
+
+                    <li><input type="checkbox" name="ComedoresYBebederos" id="checkbox__comedoresybebederos-gato"><label for="checkbox__comedoresybebederos-gato">Comedores y Bebederos</label></input></li>
+
+                    <li><input type="checkbox" name="Higiene" id="checkbox__higiene-gato"><label for="checkbox__higiene-gato">Higiene</label></input></li>
+
+                    <li><input type="checkbox" name="Juguetes" id="checkbox__juguetes-gato"><label for="checkbox__juguetes-gato">Juguetes</label></input></li>
+
+                    <li><input type="checkbox" name="Ropa" id="checkbox__ropa-gato"><label for="checkbox__ropa-gato">Ropa</label></input></li>
+
+                    <li><input type="checkbox" name="SaludYBienestar" id="checkbox__saludybienestar-gato"><label for="checkbox__saludybienestar-gato">Salud y Bienestar</label></input></li>
+
+                    <li><input type="checkbox" name="Snack" id="checkbox__snack-gato"><label for="checkbox__snack-gato">Snack</label></input></li>
+
+            </section>
+
+        </aside>
+
+        <script>
+            function toggleList(id) {
+                var ul = document.getElementById(id);
+                ul.classList.toggle("show");
+            }
+        </script>
+
+        <article class="alimento food__animals container-max">
+            <h1 class="alimento__p">Elige la mejor marca para tu perro,comida, productos y accesorios para perros, gatos y mascotas en general</h1>
+    
+            <div class="container__food">
+                <div class="card__food">
+                    <div class="food__img">
+                        <a href="#" class="food__a">
+                            <img src="./img/index/main/alimentoperro1.webp" alt="alimento para perro">
+                        </a>
+                    </div>
+                    <div class="food__description">
+                        <a href="#">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita hic quia fugit quisquam
+                                autem culpa doloribus cum deserunt quibusdam praesentium!</p>
+                        </a>
+                    </div>
+                    <div class="food__price">
+                        <h5>$26</h5>
+                    </div>
+                </div>
+    
+                <div class="card__food">
+                    <div class="food__img">
+                        <a href="#" class="food__a">
+                            <img src="./img/index/main/alimentoperro2.webp" alt="alimento para perro">
+                        </a>
+                    </div>
+                    <div class="food__description">
+                        <a href="#">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita hic quia fugit quisquam
+                                autem culpa doloribus cum deserunt quibusdam praesentium!</p>
+                        </a>
+                    </div>
+                    <div class="food__price">
+                        <h5>$21</h5>
+                    </div>
+                </div>
+    
+                <div class="card__food">
+                    <div class="food__img">
+                        <a href="#" class="food__a">
+                            <img src="./img/index/main/alimentoperro3.webp" alt="alimento para perro">
+                        </a>
+                    </div>
+                    <div class="food__description">
+                        <a href="#">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita hic quia fugit quisquam
+                                autem culpa doloribus cum deserunt quibusdam praesentium!</p>
+                        </a>
+                    </div>
+                    <div class="food__price">
+                        <h5>$32</h5>
+                    </div>
+                </div>
+    
+                <div class="card__food">
+                    <div class="food__img">
+                        <a href="#" class="food__a">
+                            <img src="./img/team-member-3.webp" alt="alimento para perro">
+                        </a>
+                    </div>
+                    <div class="food__description">
+                        <a href="#">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita hic quia fugit quisquam
+                                autem culpa doloribus cum deserunt quibusdam praesentium!</p>
+                        </a>
+                    </div>
+                    <div class="food__price">
+                        <h5>$32</h5>
+                    </div>
+                </div>
+    
+                <div class="card__food">
+                    <div class="food__img">
+                        <a href="#" class="food__a">
+                            <img src="./img/team-member-3.webp" alt="alimento para perro">
+                        </a>
+                    </div>
+                    <div class="food__description">
+                        <a href="#">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita hic quia fugit quisquam
+                                autem culpa doloribus cum deserunt quibusdam praesentium!</p>
+                        </a>
+                    </div>
+                    <div class="food__price">
+                        <h5>$32</h5>
+                    </div>
+                </div>
+    
+                <div class="card__food">
+                    <div class="food__img">
+                        <a href="#" class="food__a">
+                            <img src="./img/team-member-3.webp" alt="alimento para perro">
+                        </a>
+                    </div>
+                    <div class="food__description">
+                        <a href="#">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita hic quia fugit quisquam
+                                autem culpa doloribus cum deserunt quibusdam praesentium!</p>
+                        </a>
+                    </div>
+                    <div class="food__price">
+                        <h5>$32</h5>
+                    </div>
+                </div>
+    
+                <div class="card__food">
+                    <div class="food__img">
+                        <a href="#" class="food__a">
+                            <img src="./img/team-member-3.webp" alt="alimento para perro">
+                        </a>
+                    </div>
+                    <div class="food__description">
+                        <a href="#">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita hic quia fugit quisquam
+                                autem culpa doloribus cum deserunt quibusdam praesentium!</p>
+                        </a>
+                    </div>
+                    <div class="food__price">
+                        <h5>$32</h5>
+                    </div>
+                </div>
+    
+                <div class="card__food">
+                    <div class="food__img">
+                        <a href="#" class="food__a">
+                            <img src="./img/team-member-3.webp" alt="alimento para perro">
+                        </a>
+                    </div>
+                    <div class="food__description">
+                        <a href="#">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita hic quia fugit quisquam
+                                autem culpa doloribus cum deserunt quibusdam praesentium!</p>
+                        </a>
+                    </div>
+                    <div class="food__price">
+                        <h5>$32</h5>
+                    </div>
+                </div>
+                
+        </article>
+    </article>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
