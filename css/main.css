@@ -323,7 +323,7 @@ header .carousel .carousel-inner img {
   border: 2px solid #b0b0b0;
 }
 .alimento .container__food .card__food .food__img a img {
-  width: 100%;
+  width: 180px;
 }
 .alimento .container__food .card__food .food__description {
   width: 200px;
